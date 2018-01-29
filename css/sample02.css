@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*轮播图布局*/
+.main{
+    overflow: hidden;
+    z-index: 1;
+}
+.main,.swiper-slide,.swiper-slide a{
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 187px;
+
+}
+.swiper-container{
+
+}
+.swiper-wrapper div{
+    width: 100%;
+
+}
+.swiper-slide{
+    /*width: auto;*/
+    height: auto;
+}
+/*字体*/
+.swiper-slide a{
+    /*line-height: 330px;*/
+    color: transparent;
+    font-size: 16px;
+    text-align: left;
+}
+.swiper-slide a,.swiper-slide a img{
+    width: 100%;
+    height: auto;
+}
+.swiper-slide a p{
+    width: 100%;
+    padding: 0 17px;
+    text-align: left;
+    height: 68px;
+    font-size: .2rem;
+    color: #fff;
+    background-image: linear-gradient(180deg,rgba(0,0,0,0) 0,rgba(0,0,0,0.8) 100%);
+    overflow: hidden;
+    position: absolute;
+    bottom: 3px;
+    box-sizing: border-box;
+}
+.swiper-slide a p span{
+    position: relative;
+    top: 25px;
+}
+/*分页器和滚动条的位置调整*/
+.swiper-pagination,.swiper-scrollbar{
+    position: relative;
+    z-index: 2;
+    float: right;
+}
+.swiper-container-horizontal>.swiper-pagination{
+    bottom: 35px;
+    right: 0;
+    width: 12%;
+}
+/*取消动画*/
+.swiper-pagination{
+-webkit-transition: 0ms;
+-moz-transition: 0ms;
+-o-transition: 0ms;
+transition: 0ms;
+-ms-transform: translate3d(0,0,0);
+-o-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
+}
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{
+    margin: 0 2px;
+}
+
+
+/*按钮显示动画*/
+.swiper-button-prev,.swiper-button-next{
+    z-index: 3;
+    opacity: 0;
+    -moz-transition:opacity .5s ease-out;
+    -webkit-transition:opacity .5s ease-out;
+    -o-transition:opacity .5s ease-out;
+    -ms-transition:opacity .5s ease-out;
+    transition: opacity .5s ease-out;
+}
+.leftArea:hover .swiper-button-prev,.rightArea:hover .swiper-button-next{
+    opacity: 1;
+}
+
+/*当前分页器按钮*/
+.swiper-pagination-bullet-active {
+    background: #fff !important;
+}
+/*默认分页器按钮*/
+.swiper-pagination-bullet {
+    border-radius: 0;
+    background: #999;
+    opacity: 1;
+    border-radius: 10px;
+    height: 4px;
+    width: 4px;
+}

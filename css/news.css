@@ -1,0 +1,77 @@
+.cf::before,.cf::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+/*移动端初始化设置*/
+html{
+    font-size: 625%!important;/*100px 1rem=100px*/
+    font-family: Arial;
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.container{
+    width:100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*reset end*/
+header{
+    height: 48px;
+    background: #3e98f0 url("../img/bg-news-logo_344ce44.png") no-repeat center;
+    background-size: 0.7rem;
+    border-bottom: 1px solid #5dabf0;
+}
+header a{
+    display: block;
+    height: 0.48rem;/*48px*/
+    line-height: 5px ;
+    color: #ffffff;
+    position: relative;
+    top: -3px;
+    margin: 0 0.13rem;
+}
+header a:nth-child(1),header a:nth-child(2){
+    float: left;
+}
+header a:nth-child(3),header a:nth-child(4){
+    float: right;
+}
+header a .iconfont{
+    font-size: 0.2rem;/*20px*/
+}
+nav{
+    width: 100%;
+    height: 0.4rem;
+    background: #3e98f0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    font-size: 0.18rem;
+}
+nav ul li{
+    width:16.6%;
+    height: 0.4rem;
+    background: #3e98f0;
+    float:left;
+    display: inline-block;
+    text-align: center;
+}
+nav a{
+    color: #c2daf8;
+    display: inline-block;
+    padding: 0.083rem;
+}
+nav i{
+    color: #c2daf8;
+    display: inline-block;
+    padding: 0.1rem;
+}

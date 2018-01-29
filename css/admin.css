@@ -1,0 +1,15 @@
+.btn-primary{
+    margin-right: 5px;
+}
+.hintSuccess{
+    color:green;
+}
+.hintDefeated{
+    color:red;
+}
+.hint{
+    display: none;
+}
+#baijia{
+    float: right;
+}
